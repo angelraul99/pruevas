@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-4" *ngFor= "let marvel of marvels">
+        <app-cardcomponent 
+        [cardTitle]="marvel.name"
+        [descripcion]="marvel.description"
+        [boton]="'Go to' + marvel.thumbnail" 
+        [imagn]= "marvel.images"
+        ></app-cardcomponent>
+        
+
+    </div>
+</div>
+
